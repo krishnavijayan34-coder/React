@@ -5,15 +5,29 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 //import MyComponent from "./newcomponent";
-import MyName from "./myname";
+//import MyName from "./myname";
+//import Welcome from "./welcome.jsx"
+import ProductCard from './productcard.jsx';
 
 function App() {
-
+const students = [
+    { name: "Laptop", price: 31000 },
+    { name: "MAC", mark: 65000 },
+  ];
   return (
-            <div>
-      
-            <MyName />
-            </div>
+    <div>
+     <ProductCard name="Shoes" price={2000} />  
+       {students.map((item, index) => (
+        <ProductCard
+          key={index}
+          name={item.name}
+          price={item.price }
+          mark={item.mark}
+         
+        />
+      ))}
+            
+    </div>
   );
       
 }
