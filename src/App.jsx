@@ -7,26 +7,18 @@ import './App.css'
 //import MyComponent from "./newcomponent";
 //import MyName from "./myname";
 //import Welcome from "./welcome.jsx"
-import ProductCard from './productcard.jsx';
+//import ProductCard from './productcard.jsx';
+import UserInfo from './userinfo.jsx';
+
 
 function App() {
-const products = [
-    { name: "Laptop", price: 31000 },
-    { name: "MAC", mark: 65000 },
-  ];
+const userData = {
+    name: "Krishna",
+    age: 22
+  };
   return (
     <div>
-     <ProductCard name="Shoes" price={2000} />  
-       {products.map((item, index) => (
-        <ProductCard
-          key={index}
-          name={item.name}
-          price={item.price }
-          mark={item.mark}
-         
-        />
-      ))}
-            
+     <UserInfo name={userData.name} age={userData.age} />
     </div>
   );
       
