@@ -10,14 +10,14 @@ import './App.css'
 import ProductCard from './productcard.jsx';
 
 function App() {
-const students = [
+const products = [
     { name: "Laptop", price: 31000 },
     { name: "MAC", mark: 65000 },
   ];
   return (
     <div>
      <ProductCard name="Shoes" price={2000} />  
-       {students.map((item, index) => (
+       {products.map((item, index) => (
         <ProductCard
           key={index}
           name={item.name}
