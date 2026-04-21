@@ -8,7 +8,8 @@ import './App.css'
 import AdminPanel from "./AdminPanel.jsx";
 import StudentPanel from "./StudentPanel.jsx";
 import TeacherPanel from "./TeacherPanel.jsx";
-
+import FruitList from "./FruitList";
+import StudentList from "./StudentList";
 
 function App() {
   const [role, setRole] = useState("");
@@ -19,13 +20,16 @@ function App() {
       {/* <UserStatus status="inactive" /> */}
       {/* <UserStatus status="xyz" /> */}
 
-      <button onClick={() => setRole("admin")}>Admin</button>
-      <button onClick={() => setRole("student")}>Student</button>
-      <button onClick={() => setRole("teacher")}>Teacher</button>
-      {role === "admin" && <AdminPanel />}
-      {role === "student" && <StudentPanel />}
-      {role === "teacher" && <TeacherPanel />}
+      {/*<button onClick={() => setRole("admin")}>Admin</button>*/}
+     {/* <button onClick={() => setRole("student")}>Student</button>*/}
+      {/*<button onClick={() => setRole("teacher")}>Teacher</button>*/}
+      {/*{role === "admin" && <AdminPanel />}*/}
+      {/*{role === "student" && <StudentPanel />}*/}
+      {/*{role === "teacher" && <TeacherPanel />}*/}
+     <h1>My App</h1>
 
+      <FruitList />
+      <StudentList />
     </div>
   );
 }
