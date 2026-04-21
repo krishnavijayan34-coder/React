@@ -9,12 +9,13 @@ function StudentList() {
     <div>
       <h2>Student List</h2>
 
-      {students.map((student) => (
-        <div key={student.id}>
-          <p>Name: {student.name}</p>
-          <p>Mark: {student.mark}</p>
-        </div>
-      ))}
+      <ul>
+        {students.map((student) => (
+          <li key={student.id}>
+            Name: {student.name} | Mark: {student.mark}
+          </li>
+        ))}
+      </ul>
 
     </div>
   );
