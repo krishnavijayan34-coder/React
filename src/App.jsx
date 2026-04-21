@@ -11,15 +11,15 @@ import './App.css'
 // import FruitList from "./FruitList";
 // import StudentList from "./StudentList";
 
-import LoginForm from "./LoginForm.jsx";
+import LoginForm from "./Loginformobject.jsx";
 import ThemeToggle from "./ThemeToggle";
 
 
 function App() {
  return (
     <div>
-      {/*<LoginForm />*/}
-      <ThemeToggle />
+      <LoginForm />
+    {/*  <ThemeToggle />*/}
     </div>
   );
 }
