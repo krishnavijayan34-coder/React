@@ -12,13 +12,14 @@ import './App.css'
 // import StudentList from "./StudentList";
 
 import LoginForm from "./LoginForm.jsx";
+import ThemeToggle from "./ThemeToggle";
 
 
 function App() {
  return (
     <div>
-      <LoginForm />
-      
+      {/*<LoginForm />*/}
+      <ThemeToggle />
     </div>
   );
 }
