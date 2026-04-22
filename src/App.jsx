@@ -14,19 +14,18 @@ import './App.css'
 // import LoginForm from "./Loginformobject.jsx";
 // import ThemeToggle from "./ThemeToggle";
 
-import BackgroundColorChanger from "./BackgroundColorChanger"
-import WindowWidth from "./WindowWidth";
-import CountdownTimer from "./CountdownTimer.jsx";
-import UserList from "./UserList";
+// import BackgroundColorChanger from "./BackgroundColorChanger"
+// import WindowWidth from "./WindowWidth";
+// import CountdownTimer from "./CountdownTimer.jsx";
+// import UserList from "./UserList";
+import ThemeContext from "./ThemeContext";
+import Home from "./Home";
  
 function App() {
- return (
-    <div>
-     <BackgroundColorChanger />
-     <WindowWidth />
-     <CountdownTimer />
-     <UserList />
-    </div>
+  return (
+    <ThemeContext.Provider value="light">
+      <Home />
+    </ThemeContext.Provider>
   );
 }
 
