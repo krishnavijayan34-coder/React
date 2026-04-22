@@ -15,12 +15,13 @@ import './App.css'
 // import ThemeToggle from "./ThemeToggle";
 
 import BackgroundColorChanger from "./BackgroundColorChanger"
-
+import WindowWidth from "./WindowWidth";
 
 function App() {
  return (
     <div>
      <BackgroundColorChanger />
+     <WindowWidth />
     </div>
   );
 }
