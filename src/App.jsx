@@ -23,7 +23,7 @@ import Home from "./Home";
  
 function App() {
   return (
-    <ThemeContext.Provider value="light">
+    <ThemeContext.Provider value="dark">
       <Home />
     </ThemeContext.Provider>
   );
