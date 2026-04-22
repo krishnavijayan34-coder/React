@@ -16,12 +16,14 @@ import './App.css'
 
 import BackgroundColorChanger from "./BackgroundColorChanger"
 import WindowWidth from "./WindowWidth";
+import CountdownTimer from "./CountdownTimer.jsx";
 
 function App() {
  return (
     <div>
      <BackgroundColorChanger />
      <WindowWidth />
+     <CountdownTimer />
     </div>
   );
 }
