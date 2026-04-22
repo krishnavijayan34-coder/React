@@ -17,13 +17,15 @@ import './App.css'
 import BackgroundColorChanger from "./BackgroundColorChanger"
 import WindowWidth from "./WindowWidth";
 import CountdownTimer from "./CountdownTimer.jsx";
-
+import UserList from "./UserList";
+ 
 function App() {
  return (
     <div>
      <BackgroundColorChanger />
      <WindowWidth />
      <CountdownTimer />
+     <UserList />
     </div>
   );
 }
