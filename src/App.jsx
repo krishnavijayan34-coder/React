@@ -11,15 +11,16 @@ import './App.css'
 // import FruitList from "./FruitList";
 // import StudentList from "./StudentList";
 
-import LoginForm from "./Loginformobject.jsx";
-import ThemeToggle from "./ThemeToggle";
+// import LoginForm from "./Loginformobject.jsx";
+// import ThemeToggle from "./ThemeToggle";
+
+import BackgroundColorChanger from "./BackgroundColorChanger"
 
 
 function App() {
  return (
     <div>
-      <LoginForm />
-    {/*  <ThemeToggle />*/}
+     <BackgroundColorChanger />
     </div>
   );
 }
