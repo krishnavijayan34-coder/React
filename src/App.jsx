@@ -6,11 +6,13 @@ import './App.css'
 
 // import EmployeeContext from "./EmployeeContext.jsx";
 // import Dashboard from "./Dashboard.jsx";
-import CounterRef from "./CounterRef";
+//import CounterRef from "./CounterRef";
+import LeaveApply from "./LeaveApply";
 function App() {
   return (
     <div>
-      <CounterRef />
+      
+      <LeaveApply />
     </div>
   );
 }
