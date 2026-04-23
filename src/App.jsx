@@ -7,12 +7,14 @@ import './App.css'
 // import EmployeeContext from "./EmployeeContext.jsx";
 // import Dashboard from "./Dashboard.jsx";
 //import CounterRef from "./CounterRef";
-import LeaveApply from "./LeaveApply";
+//import LeaveApply from "./LeaveApply";
+import ToggleComponent from "./ToggleComponent";
 function App() {
   return (
     <div>
       
-      <LeaveApply />
+      <h1>React Assignment</h1>
+      <ToggleComponent />
     </div>
   );
 }
