@@ -1,23 +1,13 @@
-import { useState } from "react";
+import React from "react";
 
-function Child(props) {
-  const [value, setValue] = useState("");
+function Child({ onClick }) {
+  console.log("Child rendered");
 
   return (
     <div>
-      <h2>Give Rating</h2>
-
-      <input
-        type="number"
-        placeholder="Enter rating (1-5)"
-        onChange={(e) => setValue(e.target.value)}
-      />
-
-      <button onClick={() => props.sendRating(value)}>
-        Submit Rating
-      </button>
+      <button onClick={onClick}>Child Button</button>
     </div>
   );
 }
 
-export default Child;
+export default React.memo(Child);
