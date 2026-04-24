@@ -3,20 +3,17 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 //import heroImg from './assets/hero.png'
 //import './App.css'
-import { useState, useCallback } from "react";
-
+// import { useState, useCallback } from "react";
 //import Child from "./child.jsx";
-import Weather from "./Weather";
-import WeatherContext from "./WeatherContext";
+// import Weather from "./Weather";
+// import WeatherContext from "./WeatherContext";
+import Counter from "./Counter";
 
 function App() {
-  const theme = "light";
-
-  return (
-    <WeatherContext.Provider value={theme}>
-      <Weather />
-    </WeatherContext.Provider>
+return (
+    <div>
+      <Counter />
+    </div>
   );
 }
-
 export default App;
