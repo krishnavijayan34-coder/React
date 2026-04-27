@@ -1,20 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-//import heroImg from './assets/hero.png'
-import './App.css'
+import { useState } from "react";
+import DoubleNumber from "./DoubleNumber";
 
-// import EmployeeContext from "./EmployeeContext.jsx";
-// import Dashboard from "./Dashboard.jsx";
-//import CounterRef from "./CounterRef";
-//import LeaveApply from "./LeaveApply";
-import ToggleComponent from "./ToggleComponent";
 function App() {
+  const [count, setCount] = useState(0);
+  const [number, setNumber] = useState(5);
+
   return (
-    <div>
-      
-      <h1>React Assignment</h1>
-      <ToggleComponent />
+    <div style={{ textAlign: "center" }}>
+      <h2>Simple useMemo Example</h2>
+
+      <DoubleNumber number={number} />
+
+      <button onClick={() => setCount(count + 1)}>
+        Count: {count}
+      </button>
+
+      <br /><br />
+
+      <button onClick={() => setNumber(number + 1)}>
+        Change Number ({number})
+      </button>
     </div>
   );
 }
