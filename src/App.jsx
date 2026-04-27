@@ -7,12 +7,13 @@ import viteLogo from './assets/vite.svg'
 //import Child from "./child.jsx";
 // import Weather from "./Weather";
 // import WeatherContext from "./WeatherContext";
-import Counter from "./Counter";
+//import Counter from "./Counter";
+import Todo from "./Todo";
 
 function App() {
 return (
     <div>
-      <Counter />
+      <Todo />
     </div>
   );
 }
