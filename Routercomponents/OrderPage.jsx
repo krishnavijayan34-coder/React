@@ -5,7 +5,7 @@ const OrderPage = () => {
   const navigate = useNavigate();
 
   const handleOrder = () => {
-    // After placing order → go to summary page
+    
     navigate("/summary");
   };
 
