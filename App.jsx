@@ -1,10 +1,11 @@
 import React from "react";
-import Counter from "./utilities/Counter";
+//import Counter from "./utilities/Counter";
+import DataComponent from "./utilities/DataComponent";
 const App = () => {
     return (
          <div>
-            <h1>Custom Hook Counter App</h1>
-            <Counter />
+            <h1>Custom HTTP Hook Example</h1>
+            <DataComponent/>
         </div>
     );
 };
