@@ -1,20 +1,27 @@
-//import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-//import heroImg from './assets/hero.png'
-//import './App.css'
-// import { useState, useCallback } from "react";
-//import Child from "./child.jsx";
-// import Weather from "./Weather";
-// import WeatherContext from "./WeatherContext";
-//import Counter from "./Counter";
-import Todo from "./Todo";
+import React from "react";
+import {BrowserRouter,  Routes,Route,NavLink} from "react-router-dom"
+import Home from "./Routercomponents/Home";
+import About from "./Routercomponents/About";
+import "./index.css";
+import OrderSummary from "./Routercomponents/OrderSummary";
+import OrderPage from "./Routercomponents/OrderPage";
 
-function App() {
-return (
-    <div>
-      <Todo />
-    </div>
-  );
+function App () {
+    return (
+        <BrowserRouter>
+        <nav>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/about">About</NavLink>
+        </nav>
+        
+      <Routes>
+        <Route path="/"element={<Home/>}/>
+        <Route path="/about"element={<About/>}/>
+        <Route path="/order" element={<OrderPage />} />
+        <Route path="/summary"element={<OrderSummary/>}/>
+      </Routes>
+      </BrowserRouter>
+    );
+
 }
 export default App;
