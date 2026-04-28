@@ -9,7 +9,7 @@ function StudentList() {
     <div>
       <h2>Student List</h2>
 
-      <ul>
+      <ul style={{ margin: 0, paddingLeft: 0, listStylePosition: "inside" }}>
         {students.map((student) => (
           <li key={student.id}>
             Name: {student.name} | Mark: {student.mark}

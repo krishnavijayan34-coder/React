@@ -16,6 +16,7 @@ function Todo() {
     setInput("");
   };
 
+  
   return (
     <div style={{ textAlign: "center" }}>
       <h2>Todo App</h2>
