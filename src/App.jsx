@@ -25,8 +25,9 @@ function App() {
         <Route path="/order" element={<OrderPage />} />
         <Route path="/summary" element={<OrderSummary />} />
 
-        {/* Parent route */}
+        
         <Route path="/products" element={<Product />}>
+        <Route index element={<FeaturedProduct/>}/>
           <Route path="features" element={<FeaturedProduct />} />
           <Route path="new" element={<New />} />
         </Route>
