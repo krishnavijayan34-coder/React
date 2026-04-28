@@ -1,13 +1,21 @@
 import React from "react";
-//import Counter from "./utilities/Counter";
-import DataComponent from "./utilities/DataComponent";
-const App = () => {
-    return (
-         <div>
-            <h1>Custom HTTP Hook Example</h1>
-            <DataComponent/>
-        </div>
-    );
-};
+import {BrowserRouter,  Routes,Route,Link} from "react-router-dom"
+import Home from "./Routercomponents/Home";
+import About from "./Routercomponents/About";
 
+function App () {
+    return (
+        <BrowserRouter>
+        <nav>
+            <Link to="/">Home</Link>|
+            <Link to="/about">About</Link>|
+        </nav>
+      <Routes>
+        <Route path="/"element={<Home/>}/>
+        <Route path="/about"element={<About/>}/>
+      </Routes>
+      </BrowserRouter>
+    );
+
+}
 export default App;
